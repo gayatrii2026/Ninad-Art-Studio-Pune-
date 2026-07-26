@@ -175,7 +175,7 @@ header {
 /* HERO IMAGE */
 
 .hero-image {
-    width: 100%;
+    width: 120%;
     max-width: 520px;
     margin-left: auto;
 }
@@ -192,27 +192,38 @@ header {
 
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
 }
 
 .btn,
 .btn-outline {
-    min-width: 190px;
-    min-height: 58px;
-    padding: 14px 25px;
-    border-radius: 10px;
+    width: 105px;
+    min-width: 105px;
+
+    height: 28px;
+    min-height: 28px;
+
+    padding: 3px 6px;
+
+    border-radius: 5px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+
+    font-size: 8px;
     font-weight: 500;
+
+    line-height: 1;
+
     transition: 0.3s;
 }
-
 .btn {
-    color: white;
+    color: #ffffff;
     background: #996329;
-    border: 2px solid #996329;
+    border: 1px solid #996329;
 }
 
 .btn:hover {
@@ -221,15 +232,14 @@ header {
 
 .btn-outline {
     color: #996329;
-    border: 2px solid #996329;
-    background: transparent;
+    background: #fffaf3;
+    border: 1px solid #996329;
 }
 
 .btn-outline:hover {
     background: #996329;
-    color: white;
+    color: #ffffff;
 }
-
 
 /* =========================================================
    WELCOME SECTION
@@ -743,7 +753,7 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 23px;
+        font-size: 15px;
 
         line-height: 1.12;
 
@@ -751,7 +761,7 @@ footer p {
     }
 
     .hero h2 {
-        font-size: 27px;
+        font-size: 15px;
 
         line-height: 1;
 
@@ -762,7 +772,7 @@ footer p {
         width: 100%;
         max-width: 220px;
 
-        font-size: 11px;
+        font-size: 8px;
 
         line-height: 1.55;
 
@@ -781,24 +791,28 @@ footer p {
 
         align-items: flex-start;
 
-        gap: 7px;
+        gap: 5px;
     }
 
     .btn,
     .btn-outline {
-        width: 125px;
-        min-width: 125px;
+        width: 105px;
+        min-width: 105px;
 
-        height: 34px;
-        min-height: 34px;
+        height: 28px;
+        min-height: 28px;
 
-        padding: 5px 9px;
+        padding: 4px 6px;
 
-        border-radius: 6px;
+        border-radius: 5px;
 
-        font-size: 10px;
+        font-size: 8px;
 
         line-height: 1;
+         display: flex;
+    justify-content: center;
+    align-items: center;
+        
     }
 
 
@@ -807,12 +821,12 @@ footer p {
        ========================= */
 
     .hero-image {
-        width: 120px;
-        max-width: 120px;
+        width: 150px;
+        max-width: 150px;
 
-        height: 185px;
+        height: 250px;
 
-        margin: 0;
+        margin-left:-20px;
 
         display: flex;
 
@@ -823,8 +837,8 @@ footer p {
     }
 
     .hero-image img {
-        width: 120px;
-        height: 185px;
+        width: 150px;
+        height: 210px;
 
         object-fit: cover;
 
@@ -847,7 +861,7 @@ footer p {
     }
 
     .section-tag {
-        font-size: 10px;
+        font-size: 8px;
 
         letter-spacing: 2.5px;
 
@@ -855,7 +869,7 @@ footer p {
     }
 
     .welcome h2 {
-        font-size: 25px;
+        font-size: 20px;
 
         line-height: 1.2;
     }
@@ -868,7 +882,7 @@ footer p {
     }
 
     .welcome h3 {
-        font-size: 20px;
+        font-size: 15px;
 
         line-height: 1.25;
 
@@ -881,7 +895,7 @@ footer p {
 
         margin: auto;
 
-        font-size: 11px;
+        font-size: 8px;
 
         line-height: 1.65;
     }
@@ -893,7 +907,7 @@ footer p {
        ===================================================== */
 
     .welcome-boxes {
-        width: 100%;
+        width: 80%;
 
         margin-top: 25px;
 
@@ -907,30 +921,30 @@ footer p {
     }
 
     .box {
-        width: 100%;
-        max-width: 250px;
+        width: 80%;
+        max-width: 200px;
 
-        min-height: 105px;
+        min-height: 90px;
 
-        padding: 15px 12px;
+        padding: 12px 10px;
 
         border-radius: 10px;
     }
 
     .box i {
-        font-size: 20px;
+        font-size: 15px;
 
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
 
     .box h4 {
-        font-size: 19px;
+        font-size: 16px;
 
         line-height: 1.2;
     }
 
     .box span {
-        font-size: 10px;
+        font-size: 8px;
     }
 
 
