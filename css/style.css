@@ -598,62 +598,92 @@ footer p {
    MOBILE
    ========================================================= */
 
-@media (max-width: 768px) {
+/* =====================================================
+   MOBILE RESPONSIVE DESIGN
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    /* ---------- GENERAL ---------- */
 
     body {
         width: 100%;
         overflow-x: hidden;
+        font-size: 14px;
     }
 
-    /* ---------- MOBILE NAVBAR ---------- */
+    /* ---------- HEADER ---------- */
+
+    header {
+        width: 100%;
+    }
 
     .navbar {
-        min-height: 75px;
-        padding: 10px 18px;
+        width: 100%;
+        min-height: 145px;
+        padding: 12px 18px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         position: relative;
     }
 
+    /* Logo + Name */
+
     .logo {
-        gap: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
     }
 
     .logo img {
-        width: 55px;
-        height: 55px;
-        border-width: 2px;
+        width: 82px;
+        height: 82px;
+        object-fit: cover;
+        border-radius: 50%;
+        flex-shrink: 0;
     }
 
     .logo h2 {
-        font-size: 15px;
-        letter-spacing: 0.5px;
+        font-family: "Cinzel", serif;
+        font-size: 22px;
         line-height: 1.25;
-        max-width: 190px;
+        text-align: left;
+        margin: 0;
+        max-width: 230px;
     }
 
-    /* Show hamburger */
+    /* Hamburger */
 
     .menu-toggle {
         display: block;
-        font-size: 30px;
+        margin-top: 12px;
+        padding: 2px 10px;
+        font-size: 27px;
         line-height: 1;
+        background: transparent;
+        border: none;
+        color: #70411f;
+        cursor: pointer;
     }
 
-    /* Hide menu initially */
+    /* Navigation menu */
 
     .nav-links {
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
         display: none;
+        width: 90%;
+        margin: 8px auto 0;
+        padding: 10px 0;
         flex-direction: column;
+        align-items: center;
         gap: 0;
-        background: #ffffff;
-        box-shadow: 0 8px 20px rgba(50, 30, 15, 0.12);
-        padding: 8px 0;
+        background: #fffaf3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.12);
     }
-
-    /* JavaScript adds this class */
 
     .nav-links.active {
         display: flex;
@@ -662,276 +692,438 @@ footer p {
     .nav-links li {
         width: 100%;
         text-align: center;
+        list-style: none;
     }
 
-    .nav-links a {
+    .nav-links li a {
         display: block;
-        width: 100%;
-        padding: 14px 20px;
+        padding: 10px;
         font-size: 16px;
-        color: #3c2b21;
+        text-decoration: none;
     }
 
-    .nav-links a:hover {
-        background: #faf1e7;
-        color: #9b652b;
-    }
 
-    /* ---------- HERO ---------- */
+    /* =================================================
+       HERO SECTION
+       ================================================= */
 
     .hero {
+        width: 100%;
         min-height: auto;
-        padding: 55px 20px 60px;
+        padding: 45px 20px 40px;
+        display: flex;
         flex-direction: column;
-        gap: 40px;
         text-align: center;
-        background-attachment: scroll;
+        gap: 25px;
     }
 
     .hero-text {
         width: 100%;
-        max-width: 100%;
     }
 
     .hero-top {
+        display: block;
+        font-family: "Cinzel", serif;
         font-size: 14px;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
         margin-bottom: 18px;
     }
 
     .hero h1 {
-        font-size: clamp(32px, 10vw, 48px);
+        font-family: "Cinzel", serif;
+        font-size: 34px;
         line-height: 1.15;
         letter-spacing: 1px;
+        margin: 0 0 18px;
     }
 
     .hero h2 {
-        margin-top: 18px;
-        font-size: clamp(38px, 11vw, 55px);
+        font-family: "Great Vibes", cursive;
+        font-size: 45px;
         line-height: 1.1;
+        margin: 0 0 22px;
     }
 
-    .hero-text > p {
-        margin: 25px auto 0;
+    .hero p {
+        font-family: "Poppins", sans-serif;
         font-size: 15px;
         line-height: 1.8;
-        max-width: 520px;
+        margin: 0 auto;
+        max-width: 370px;
     }
 
-    .hero-buttons {
-        justify-content: center;
-        margin-top: 28px;
-        gap: 12px;
-    }
-
-    .btn,
-    .btn-outline {
-        padding: 11px 19px;
-        font-size: 14px;
-    }
+    /* Hero image */
 
     .hero-image {
         width: 100%;
-        max-width: 430px;
+        margin-top: 5px;
     }
 
     .hero-image img {
         width: 100%;
-        max-height: 500px;
+        max-width: 330px;
+        height: auto;
+        display: block;
+        margin: auto;
         border-radius: 12px;
     }
 
-    /* ---------- WELCOME ---------- */
+
+    /* =================================================
+       HERO BUTTONS
+       ================================================= */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .hero-buttons .btn,
+    .hero-buttons .btn-outline {
+        width: 85%;
+        max-width: 280px;
+        min-height: 50px;
+        padding: 12px 18px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+
+    /* =================================================
+       WELCOME SECTION
+       ================================================= */
 
     .welcome {
-        padding: 65px 20px;
+        width: 100%;
+        padding: 50px 20px;
+        text-align: center;
     }
 
     .section-tag {
         font-size: 13px;
         letter-spacing: 3px;
+        margin-bottom: 12px;
     }
 
     .welcome h2 {
-        font-size: 32px;
+        font-family: "Cinzel", serif;
+        font-size: 29px;
+        line-height: 1.2;
+        margin: 0;
     }
 
     .welcome h3 {
-        font-size: 27px;
-        line-height: 1.2;
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 15px 0;
     }
 
     .welcome-text {
-        width: 100%;
-        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
         line-height: 1.8;
+        max-width: 370px;
+        margin: 20px auto;
     }
+
+    /* Welcome boxes */
 
     .welcome-boxes {
-        margin-top: 35px;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 15px;
-        max-width: 350px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 25px;
     }
 
-    .box {
-        width: 100%;
-        padding: 25px 15px;
+    .welcome-boxes .box {
+        padding: 15px 5px;
+        min-height: 100px;
+        border-radius: 8px;
     }
 
-    /* ---------- PRODUCTS ---------- */
+    .welcome-boxes .box i {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    .welcome-boxes .box h4 {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+
+    .welcome-boxes .box span {
+        font-size: 11px;
+    }
+
+
+    /* =================================================
+       PRODUCTS
+       ================================================= */
 
     .products {
-        padding: 65px 20px;
+        width: 100%;
+        padding: 45px 18px;
     }
 
-    .products > h2,
-    .features > h2,
-    .reviews > h2 {
-        font-size: 29px;
-        line-height: 1.3;
-        margin-bottom: 35px;
+    .products > h2 {
+        font-family: "Cinzel", serif;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
     .product-container {
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 25px;
-        max-width: 380px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
     }
 
     .card img {
-        height: 300px;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     .card h3 {
-        font-size: 18px;
+        font-size: 19px;
+        margin: 12px 0 7px;
     }
 
-    /* ---------- FEATURES ---------- */
+    .card p {
+        font-size: 13px;
+        margin: 4px 0;
+    }
+
+    .card h4 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 9px 18px;
+    }
+
+
+    /* =================================================
+       FEATURES
+       ================================================= */
 
     .features {
-        padding: 65px 20px;
+        width: 100%;
+        padding: 45px 18px;
+    }
+
+    .features > h2 {
+        font-family: "Cinzel", serif;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
     .feature-container {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        max-width: 380px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
     }
 
     .feature-box {
-        padding: 30px 20px;
+        padding: 20px 10px;
+        min-height: 150px;
+        border-radius: 10px;
+        text-align: center;
     }
 
-    /* ---------- REVIEWS ---------- */
+    .feature-box i {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .feature-box h3 {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+
+    .feature-box p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+
+    /* =================================================
+       REVIEWS
+       ================================================= */
 
     .reviews {
-        padding: 65px 20px;
+        width: 100%;
+        padding: 45px 18px;
+    }
+
+    .reviews > h2 {
+        font-family: "Cinzel", serif;
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
     .review-container {
+        display: grid;
         grid-template-columns: 1fr;
-        max-width: 380px;
-        gap: 18px;
+        gap: 15px;
     }
 
     .review-card {
-        padding: 28px 20px;
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 10px;
+        text-align: center;
     }
 
-    /* ---------- FOOTER ---------- */
-
-    footer {
-        padding: 50px 20px 25px;
+    .review-card p {
+        font-size: 14px;
+        line-height: 1.6;
     }
 
-    footer h2 {
-        font-size: 25px;
-    }
-
-    footer p {
+    .review-card h4 {
         font-size: 14px;
     }
 
+
+    /* =================================================
+       FOOTER
+       ================================================= */
+
+    footer {
+        width: 100%;
+        padding: 40px 18px 25px;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-family: "Cinzel", serif;
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .footer-location {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 18px 0;
+    }
+
+    .social a {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .copyright {
+        font-size: 11px;
+        margin-top: 15px;
+    }
 }
 
-/* =========================================================
-   SMALL MOBILE
-   ========================================================= */
 
-@media (max-width: 420px) {
+/* =====================================================
+   VERY SMALL MOBILE PHONES
+   ===================================================== */
+
+@media (max-width: 380px) {
 
     .navbar {
-        padding: 9px 14px;
+        min-height: 135px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .logo img {
-        width: 50px;
-        height: 50px;
+        width: 68px;
+        height: 68px;
     }
 
     .logo h2 {
-        font-size: 13px;
-        max-width: 170px;
+        font-size: 18px;
+        max-width: 190px;
     }
 
     .menu-toggle {
-        font-size: 28px;
+        font-size: 24px;
+        margin-top: 8px;
     }
 
     .hero {
-        padding: 45px 16px 50px;
+        padding: 35px 15px;
     }
 
     .hero h1 {
-        font-size: 31px;
+        font-size: 29px;
     }
 
     .hero h2 {
         font-size: 39px;
     }
 
-    .hero-text > p {
-        font-size: 14px;
-    }
-
-    .btn,
-    .btn-outline {
-        padding: 10px 15px;
+    .hero p {
         font-size: 13px;
     }
 
     .welcome {
-        padding: 55px 16px;
+        padding: 40px 15px;
     }
 
     .welcome h2 {
-        font-size: 28px;
-    }
-
-    .welcome h3 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .welcome-text {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    .products,
-    .features,
-    .reviews {
-        padding: 55px 16px;
+    .welcome-boxes {
+        gap: 5px;
     }
 
-    .products > h2,
-    .features > h2,
-    .reviews > h2 {
-        font-size: 26px;
+    .welcome-boxes .box {
+        padding: 12px 3px;
     }
 
-    .card img {
-        height: 260px;
+    .feature-container {
+        grid-template-columns: 1fr;
     }
 
+    .hero-buttons .btn,
+    .hero-buttons .btn-outline {
+        width: 90%;
+    }
 }
