@@ -1,7 +1,8 @@
 /* =========================================================
-   NINAD ART STUDIO - RESPONSIVE STYLE
-   Desktop + Tablet + Mobile
+   NINAD ART STUDIO - DESKTOP + MOBILE RESPONSIVE CSS
    ========================================================= */
+
+/* ---------- RESET ---------- */
 
 * {
     margin: 0;
@@ -15,336 +16,280 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #faf5ed;
     color: #3d2a20;
+    background: #fffaf3;
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* =========================================================
-   HEADER / NAVBAR
+   HEADER / NAVBAR - DESKTOP
    ========================================================= */
 
 header {
-    width: 100%;
     background: #ffffff;
-    position: relative;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(80, 50, 20, 0.08);
+    width: 100%;
 }
 
 .navbar {
     width: 100%;
-    max-width: 1400px;
-    min-height: 105px;
-    margin: auto;
-    padding: 15px 5%;
+    min-height: 110px;
+    padding: 18px 6%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
 }
 
-/* Logo */
-
 .logo {
     display: flex;
     align-items: center;
     gap: 18px;
-    flex-shrink: 0;
 }
 
 .logo img {
-    width: 78px;
-    height: 78px;
+    width: 82px;
+    height: 82px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #b18442;
-    background: #fff;
-    display: block;
+    border: 3px solid #a87832;
 }
 
 .logo h2 {
     font-family: 'Cinzel', serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    color: #7a4b25;
+    color: #704522;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    line-height: 1.3;
 }
-
-/* Navigation */
 
 .nav-links {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 35px;
+    gap: 30px;
     list-style: none;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #29231f;
+    color: #3d2a20;
     font-size: 17px;
     font-weight: 500;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #a36d2c;
+    color: #a06a2c;
 }
-
-/* Hamburger */
 
 .menu-toggle {
     display: none;
-    border: none;
-    background: transparent;
-    color: #7a4b25;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 5px;
 }
 
+
 /* =========================================================
-   HERO
+   HERO - DESKTOP
    ========================================================= */
 
 .hero {
     min-height: 650px;
-    width: 100%;
-    padding: 80px 7%;
+    padding: 70px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 70px;
-
-    background:
-        linear-gradient(
-            rgba(250, 245, 237, 0.88),
-            rgba(250, 245, 237, 0.88)
-        ),
-        url("../images/hero-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    gap: 60px;
+    background: #fff8ef;
 }
 
-/* Hero text */
-
 .hero-text {
-    width: 52%;
-    max-width: 700px;
+    flex: 1;
+    max-width: 650px;
 }
 
 .hero-top {
     display: block;
     margin-bottom: 25px;
     font-family: 'Cinzel', serif;
-    color: #a67432;
     font-size: 20px;
     letter-spacing: 7px;
-    font-weight: 600;
+    color: #a87532;
 }
 
 .hero h1 {
     font-family: 'Cinzel', serif;
-    color: #4b281a;
-    font-size: clamp(45px, 5vw, 75px);
-    line-height: 1.05;
+    font-size: 56px;
+    line-height: 1.15;
     font-weight: 500;
+    color: #4c2b20;
     text-transform: uppercase;
 }
 
 .hero h2 {
-    margin-top: 25px;
+    margin-top: 20px;
     font-family: 'Great Vibes', cursive;
-    color: #b27b35;
-    font-size: clamp(45px, 5vw, 70px);
+    font-size: 58px;
     font-weight: 400;
-    line-height: 1.1;
+    color: #b17a32;
 }
 
-.hero-text > p {
-    margin-top: 30px;
-    max-width: 650px;
-    font-size: 17px;
+.hero p {
+    margin-top: 28px;
+    font-size: 18px;
     line-height: 1.9;
-    color: #4c4743;
+    color: #4d4d4d;
 }
-
-.hero-text strong {
-    color: #53301e;
-}
-
-/* Hero buttons */
 
 .hero-buttons {
     margin-top: 35px;
     display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .btn,
 .btn-outline {
-    display: inline-block;
-    padding: 13px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 0.3s;
 }
 
 .btn {
-    background: #8c5b2d;
     color: white;
-}
-
-.btn:hover {
-    background: #65401f;
-    transform: translateY(-2px);
+    background: #98632b;
 }
 
 .btn-outline {
-    border: 2px solid #8c5b2d;
-    color: #8c5b2d;
+    color: #98632b;
+    border: 2px solid #98632b;
 }
 
+.btn:hover,
 .btn-outline:hover {
-    background: #8c5b2d;
-    color: white;
+    transform: translateY(-2px);
 }
-
-/* Hero image */
 
 .hero-image {
-    width: 43%;
-    max-width: 550px;
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
 .hero-image img {
     width: 100%;
-    max-height: 600px;
-    object-fit: cover;
+    max-width: 520px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(70, 40, 20, 0.2);
 }
 
+
 /* =========================================================
-   WELCOME
+   WELCOME SECTION
    ========================================================= */
 
 .welcome {
-    padding: 100px 7%;
     text-align: center;
-    background: #fffaf4;
+    padding: 90px 10%;
+    background: #fffaf3;
 }
 
 .section-tag {
-    color: #b17a34;
     font-family: 'Cinzel', serif;
     font-size: 18px;
-    letter-spacing: 5px;
-    margin-bottom: 15px;
+    letter-spacing: 6px;
+    color: #a87532;
 }
 
 .welcome h2 {
+    margin-top: 15px;
     font-family: 'Cinzel', serif;
-    font-size: clamp(35px, 4vw, 52px);
-    color: #59331f;
-    font-weight: 600;
+    font-size: 42px;
+    color: #5a3423;
 }
 
 .divider {
-    width: 80px;
+    width: 70px;
     height: 3px;
-    margin: 22px auto;
-    background: #b17a34;
+    background: #a87532;
+    margin: 20px auto;
 }
 
 .welcome h3 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 34px;
-    color: #9a682c;
-    font-weight: 600;
+    font-size: 30px;
+    color: #98632b;
 }
 
 .welcome-text {
-    width: 80%;
     max-width: 850px;
     margin: 25px auto 0;
     font-size: 17px;
     line-height: 1.9;
-    color: #5b5550;
+    color: #555;
 }
 
-/* Welcome boxes */
-
 .welcome-boxes {
-    margin: 50px auto 0;
+    margin-top: 45px;
     display: flex;
     justify-content: center;
     gap: 25px;
-    max-width: 1000px;
 }
 
 .box {
-    width: 220px;
-    padding: 30px 20px;
+    width: 180px;
+    padding: 25px 15px;
+    border-radius: 12px;
     background: #fff;
-    border: 1px solid #e5d3bd;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(90, 50, 20, 0.08);
-    transition: 0.3s ease;
-}
-
-.box:hover {
-    transform: translateY(-7px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .box i {
-    font-size: 30px;
-    color: #b17a34;
-    margin-bottom: 15px;
+    font-size: 25px;
+    color: #a87532;
 }
 
 .box h4 {
-    font-family: 'Cinzel', serif;
-    color: #59331f;
-    font-size: 25px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 .box span {
-    color: #6b625c;
+    font-size: 14px;
+    color: #666;
 }
+
 
 /* =========================================================
    PRODUCTS
    ========================================================= */
 
 .products {
-    padding: 100px 7%;
+    padding: 80px 7%;
     text-align: center;
-    background: #f7eee3;
+    background: #fdf5ea;
 }
 
 .products > h2,
 .features > h2,
 .reviews > h2 {
     font-family: 'Cinzel', serif;
-    color: #59331f;
-    font-size: clamp(32px, 4vw, 48px);
-    margin-bottom: 50px;
+    font-size: 38px;
+    color: #5a3423;
+    margin-bottom: 45px;
 }
 
 .product-container {
-    max-width: 1200px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -352,170 +297,147 @@ header {
 
 .card {
     background: #fff;
-    padding-bottom: 25px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(80, 50, 20, 0.1);
-    transition: 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
+    padding-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 .card img {
     width: 100%;
-    height: 270px;
+    height: 280px;
     object-fit: cover;
-    display: block;
 }
 
 .card h3 {
-    margin-top: 20px;
+    margin-top: 18px;
     font-family: 'Cinzel', serif;
-    color: #59331f;
     font-size: 20px;
 }
 
 .card p {
-    margin-top: 6px;
-    color: #777;
+    margin-top: 5px;
     font-size: 14px;
+    color: #666;
 }
 
 .card h4 {
-    margin: 15px 0;
-    color: #a36d2c;
-    font-size: 21px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #98632b;
 }
 
 .card button {
+    margin-top: 15px;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 22px;
-    background: #8c5b2d;
+    border-radius: 7px;
+    background: #98632b;
     color: white;
-    border-radius: 25px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
 }
 
-.card button:hover {
-    background: #603b20;
-}
 
 /* =========================================================
    FEATURES
    ========================================================= */
 
 .features {
-    padding: 100px 7%;
+    padding: 80px 7%;
     text-align: center;
-    background: #fffaf4;
+    background: #fffaf3;
 }
 
 .feature-container {
-    max-width: 1100px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
 .feature-box {
-    padding: 35px 20px;
-    background: #fff;
-    border-radius: 15px;
-    border: 1px solid #eadac7;
-    transition: 0.3s ease;
-}
-
-.feature-box:hover {
-    transform: translateY(-6px);
+    padding: 30px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
 .feature-box i {
-    font-size: 32px;
-    color: #b17a34;
-    margin-bottom: 18px;
+    font-size: 30px;
+    color: #a87532;
+    margin-bottom: 15px;
 }
 
 .feature-box h3 {
     font-family: 'Cinzel', serif;
-    color: #59331f;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .feature-box p {
-    color: #6b625c;
-    line-height: 1.6;
     font-size: 14px;
+    line-height: 1.6;
+    color: #666;
 }
+
 
 /* =========================================================
    REVIEWS
    ========================================================= */
 
 .reviews {
-    padding: 100px 7%;
-    background: #f7eee3;
+    padding: 80px 7%;
     text-align: center;
+    background: #fdf5ea;
 }
 
 .review-container {
-    max-width: 1100px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .review-card {
-    background: #fff;
-    padding: 35px 25px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(80, 50, 20, 0.08);
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
 .review-card p {
-    margin: 20px 0;
-    line-height: 1.7;
-    color: #5d5650;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .review-card h4 {
-    color: #8c5b2d;
+    color: #98632b;
 }
+
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
 footer {
-    padding: 65px 7% 30px;
+    padding: 60px 7%;
     text-align: center;
-    background: #3c281d;
-    color: #fff;
+    background: #4b3024;
+    color: white;
 }
 
 footer h2 {
     font-family: 'Cinzel', serif;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 footer p {
-    color: #e8dcd0;
+    font-size: 14px;
     line-height: 1.7;
 }
 
 .footer-location {
-    margin-top: 15px;
-}
-
-.footer-location i {
-    color: #d2a05d;
-    margin-right: 7px;
+    margin-top: 12px;
 }
 
 .social {
@@ -526,497 +448,322 @@ footer p {
 }
 
 .social a {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    background: #fff;
-    color: #6e4727;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-
-.social a:hover {
-    transform: translateY(-3px);
-    background: #d2a05d;
     color: white;
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
 .copyright {
-    margin-top: 25px;
-    font-size: 13px;
+    font-size: 12px;
+    opacity: 0.8;
 }
+
 
 /* =========================================================
    TABLET
    ========================================================= */
 
+@media (max-width: 1000px) {
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 /* =========================================================
-   MOBILE RESPONSIVE DESIGN
-   Desktop design remains unchanged
+   MOBILE - IMPORTANT
    ========================================================= */
 
 @media (max-width: 768px) {
 
     /* ---------- GENERAL ---------- */
 
-    html,
     body {
         width: 100%;
-        max-width: 100%;
         overflow-x: hidden;
     }
 
-    body {
-        font-size: 15px;
-    }
-
-
-    /* =====================================================
-       HEADER
-       ===================================================== */
-
-    header {
-        width: 100%;
-        background: #ffffff;
-    }
+    /* ---------- HEADER ---------- */
 
     .navbar {
-        width: 100%;
-        min-height: 150px;
-        padding: 15px 18px 12px;
+        min-height: 100px;
+        padding: 15px 18px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        justify-content: flex-start;
-        position: relative;
+        gap: 0;
     }
 
-
-    /* ---------- LOGO ---------- */
-
     .logo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
+        gap: 10px;
+        max-width: calc(100% - 55px);
     }
 
     .logo img {
-        width: 92px;
-        height: 92px;
-        object-fit: cover;
-        border-radius: 50%;
+        width: 62px;
+        height: 62px;
+        border-width: 2px;
         flex-shrink: 0;
     }
 
     .logo h2 {
-        margin: 0;
-        max-width: 220px;
-        font-family: "Cinzel", serif;
-        font-size: 21px;
+        font-size: 17px;
         line-height: 1.25;
-        text-align: left;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
     }
 
-
-    /* =====================================================
-       HAMBURGER MENU
-       ===================================================== */
+    /* Hamburger */
 
     .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 18px;
-        bottom: 12px;
-
+        display: flex;
         width: 42px;
         height: 42px;
-
-        padding: 0;
         border: none;
         background: transparent;
-
-        font-size: 28px;
-        line-height: 42px;
-        color: #75451f;
-
+        color: #704522;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
-        z-index: 1001;
+        padding: 0;
+        flex-shrink: 0;
     }
 
-
-    /* ---------- NAVIGATION ---------- */
+    /* Navigation hidden until JS opens it */
 
     .nav-links {
         display: none;
-
-        position: absolute;
-        top: 145px;
-        right: 15px;
-
-        width: 180px;
-
-        margin: 0;
-        padding: 10px 0;
-
-        background: #fffaf3;
-        border: 1px solid #c89a5b;
-        border-radius: 12px;
-
-        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-
-        z-index: 1000;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 12px;
+        padding: 8px 0;
+        border-top: 1px solid #eadbca;
     }
 
     .nav-links.active {
-        display: block;
+        display: flex;
     }
 
     .nav-links li {
         width: 100%;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        text-align: center;
     }
 
-    .nav-links li a {
+    .nav-links a {
         display: block;
-
         width: 100%;
-        padding: 11px 18px;
-
-        font-family: "Poppins", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-
-        color: #4b2a18;
-        text-decoration: none;
-
-        text-align: left;
+        padding: 11px 10px;
+        font-size: 15px;
+        color: #4a3327;
     }
 
-    .nav-links li a:hover {
-        background: #f3e4d1;
-    }
-
-
-    /* =====================================================
-       HERO SECTION
-       ===================================================== */
+    /* ---------- HERO ---------- */
 
     .hero {
-        width: 100%;
+        min-height: auto;
+        padding: 42px 20px 50px;
         display: flex;
         flex-direction: column;
-
-        padding: 42px 20px 35px;
-
-        text-align: center;
         gap: 30px;
+        text-align: center;
     }
 
     .hero-text {
         width: 100%;
-        max-width: 500px;
-        margin: auto;
+        max-width: 100%;
+    }
+
+    .hero-top {
+        margin-bottom: 15px;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+        line-height: 1.2;
+        letter-spacing: 0;
+    }
+
+    .hero h2 {
+        margin-top: 15px;
+        font-size: 40px;
+        line-height: 1.05;
+    }
+
+    .hero p {
+        margin: 20px auto 0;
+        max-width: 520px;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 18px;
+        min-height: 48px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        border-radius: 12px;
     }
 
 
     /* ---------- WELCOME ---------- */
 
-    .hero-top {
-        display: block;
-
-        margin-bottom: 18px;
-
-        font-family: "Cinzel", serif;
-        font-size: 15px;
-        font-weight: 600;
-
-        letter-spacing: 3px;
-        line-height: 1.4;
-    }
-
-
-    /* ---------- MAIN HERO TITLE ---------- */
-
-    .hero h1 {
-        margin: 0 auto 16px;
-
-        font-family: "Cinzel", serif;
-
-        font-size: 36px;
-        line-height: 1.15;
-
-        letter-spacing: 1px;
-        font-weight: 600;
-    }
-
-
-    /* ---------- SCRIPT TEXT ---------- */
-
-    .hero h2 {
-        margin: 0 auto 25px;
-
-        font-family: "Great Vibes", cursive;
-
-        font-size: 42px;
-        line-height: 1.1;
-
-        font-weight: 400;
-    }
-
-
-    /* ---------- HERO PARAGRAPH ---------- */
-
-    .hero p {
-        width: 100%;
-        max-width: 470px;
-
-        margin: 0 auto;
-
-        font-family: "Poppins", sans-serif;
-
-        font-size: 15px;
-        line-height: 1.8;
-
-        text-align: center;
-    }
-
-
-    /* =====================================================
-       HERO BUTTONS
-       ===================================================== */
-
-    .hero-buttons {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 12px;
-
-        margin-top: 28px;
-    }
-
-    .hero-buttons .btn,
-    .hero-buttons .btn-outline {
-        width: 100%;
-        max-width: 360px;
-
-        margin: 0 auto;
-
-        min-height: 52px;
-
-        padding: 13px 20px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        font-family: "Poppins", sans-serif;
-
-        font-size: 15px;
-        font-weight: 500;
-
-        text-decoration: none;
-
-        border-radius: 12px;
-        box-sizing: border-box;
-    }
-
-
-    /* ---------- HERO IMAGE ---------- */
-
-    .hero-image {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .hero-image img {
-        display: block;
-
-        width: 100%;
-        max-width: 420px;
-
-        height: auto;
-
-        margin: 0 auto;
-
-        border-radius: 15px;
-    }
-
-
-    /* =====================================================
-       WELCOME SECTION
-       ===================================================== */
-
     .welcome {
-        width: 100%;
-
-        padding: 55px 22px 50px;
-
-        text-align: center;
+        padding: 55px 20px;
     }
 
-    .welcome .section-tag {
-        margin-bottom: 12px;
-
-        font-family: "Cinzel", serif;
-        font-size: 14px;
-
+    .section-tag {
+        font-size: 12px;
         letter-spacing: 3px;
     }
 
     .welcome h2 {
-        margin: 0;
+        margin-top: 10px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
 
-        font-family: "Cinzel", serif;
-
-        font-size: 29px;
-        line-height: 1.25;
+    .divider {
+        width: 45px;
+        height: 2px;
+        margin: 14px auto;
     }
 
     .welcome h3 {
-        margin: 15px 0 22px;
-
-        font-family: "Cormorant Garamond", serif;
-
         font-size: 23px;
         line-height: 1.3;
     }
 
     .welcome-text {
+        margin-top: 18px;
         width: 100%;
-        max-width: 470px;
-
-        margin: 0 auto;
-
-        font-family: "Poppins", sans-serif;
-
         font-size: 14px;
-        line-height: 1.8;
-
-        text-align: center;
+        line-height: 1.7;
     }
 
-
-    /* =====================================================
-       WELCOME BOXES
-       Vertical on mobile
-       ===================================================== */
+    /* IMPORTANT:
+       Boxes become vertical on mobile */
 
     .welcome-boxes {
-        width: 100%;
-
-        margin-top: 32px;
-
+        margin-top: 28px;
         display: flex;
         flex-direction: column;
-
         align-items: center;
-
-        gap: 14px;
+        gap: 12px;
+        width: 100%;
     }
 
-    .welcome-boxes .box {
+    .box {
         width: 100%;
         max-width: 300px;
-
-        min-height: 120px;
-
-        padding: 20px 15px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        text-align: center;
-
-        border-radius: 14px;
-        box-sizing: border-box;
+        min-height: 105px;
+        padding: 18px 15px;
     }
 
-    .welcome-boxes .box i {
-        font-size: 23px;
-        margin-bottom: 8px;
-    }
-
-    .welcome-boxes .box h4 {
-        margin: 0;
-
+    .box i {
         font-size: 21px;
-        line-height: 1.2;
     }
 
-    .welcome-boxes .box span {
+    .box h4 {
+        margin-top: 6px;
+        font-size: 18px;
+    }
+
+    .box span {
         font-size: 13px;
-        margin-top: 5px;
     }
 
 
-    /* =====================================================
-       PRODUCTS
-       ===================================================== */
+    /* ---------- PRODUCTS ---------- */
 
     .products {
-        width: 100%;
-        padding: 50px 20px;
+        padding: 55px 18px;
     }
 
-    .products > h2 {
-        font-family: "Cinzel", serif;
+    .products > h2,
+    .features > h2,
+    .reviews > h2 {
         font-size: 27px;
-        line-height: 1.3;
-
-        text-align: center;
-
-        margin-bottom: 28px;
+        line-height: 1.25;
+        margin-bottom: 25px;
     }
 
     .product-container {
-        width: 100%;
-
         display: grid;
         grid-template-columns: 1fr;
-
-        gap: 20px;
+        gap: 18px;
     }
 
     .card {
         width: 100%;
-        max-width: 360px;
-
-        margin: 0 auto;
-
-        padding: 15px;
-
-        box-sizing: border-box;
     }
 
     .card img {
-        width: 100%;
-        height: auto;
-
-        display: block;
-
-        border-radius: 12px;
+        height: 260px;
     }
 
     .card h3 {
+        margin-top: 14px;
         font-size: 18px;
-        line-height: 1.3;
     }
 
     .card p {
         font-size: 13px;
-        line-height: 1.5;
     }
 
     .card h4 {
@@ -1024,176 +771,86 @@ footer p {
     }
 
     .card button {
-        width: 100%;
-
-        min-height: 45px;
-
-        font-size: 14px;
-
-        border-radius: 9px;
+        font-size: 13px;
+        padding: 9px 18px;
     }
 
 
-    /* =====================================================
-       WHY CHOOSE US
-       ===================================================== */
+    /* ---------- FEATURES ---------- */
 
     .features {
-        width: 100%;
-        padding: 50px 20px;
-    }
-
-    .features > h2 {
-        font-family: "Cinzel", serif;
-
-        font-size: 27px;
-        line-height: 1.3;
-
-        text-align: center;
-
-        margin-bottom: 28px;
+        padding: 55px 18px;
     }
 
     .feature-container {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
+        grid-template-columns: 1fr;
         gap: 15px;
-
-        align-items: center;
     }
 
     .feature-box {
-        width: 100%;
-        max-width: 340px;
-
-        padding: 22px 18px;
-
-        text-align: center;
-
-        box-sizing: border-box;
-
-        border-radius: 14px;
+        padding: 23px 18px;
     }
 
     .feature-box i {
         font-size: 25px;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .feature-box h3 {
         font-size: 18px;
-        margin: 5px 0 8px;
     }
 
     .feature-box p {
         font-size: 13px;
-        line-height: 1.6;
-        margin: 0;
     }
 
 
-    /* =====================================================
-       REVIEWS
-       ===================================================== */
+    /* ---------- REVIEWS ---------- */
 
     .reviews {
-        width: 100%;
-        padding: 50px 20px;
-    }
-
-    .reviews > h2 {
-        font-family: "Cinzel", serif;
-
-        font-size: 27px;
-        line-height: 1.3;
-
-        text-align: center;
-
-        margin-bottom: 28px;
+        padding: 55px 18px;
     }
 
     .review-container {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-
+        grid-template-columns: 1fr;
         gap: 15px;
     }
 
     .review-card {
-        width: 100%;
-        max-width: 350px;
-
         padding: 22px 18px;
-
-        text-align: center;
-
-        box-sizing: border-box;
-
-        border-radius: 14px;
     }
 
     .review-card p {
         font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .review-card h4 {
-        font-size: 14px;
     }
 
 
-    /* =====================================================
-       FOOTER
-       ===================================================== */
+    /* ---------- FOOTER ---------- */
 
     footer {
-        width: 100%;
-
-        padding: 42px 20px 25px;
-
-        text-align: center;
-
-        box-sizing: border-box;
+        padding: 45px 20px;
     }
 
     footer h2 {
-        font-family: "Cinzel", serif;
-
-        font-size: 25px;
-        line-height: 1.3;
+        font-size: 23px;
     }
 
     footer p {
-        font-size: 13px;
-        line-height: 1.6;
+        font-size: 12px;
     }
 
     .social {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-
         margin: 20px 0;
     }
 
     .social a {
-        width: 40px;
-        height: 40px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 50%;
+        width: 36px;
+        height: 36px;
     }
 
+    .copyright {
+        font-size: 11px;
+    }
 }
 
 
@@ -1201,67 +858,49 @@ footer p {
    VERY SMALL PHONES
    ========================================================= */
 
-@media (max-width: 390px) {
+@media (max-width: 380px) {
 
     .navbar {
-        min-height: 140px;
-        padding: 12px 14px 10px;
-    }
-
-    .logo {
-        gap: 9px;
+        padding: 12px 14px;
     }
 
     .logo img {
-        width: 75px;
-        height: 75px;
+        width: 55px;
+        height: 55px;
     }
 
     .logo h2 {
-        max-width: 185px;
-        font-size: 17px;
-        letter-spacing: 0.5px;
+        font-size: 15px;
     }
 
     .menu-toggle {
-        right: 14px;
-        bottom: 8px;
-
         width: 38px;
         height: 38px;
-
-        font-size: 25px;
-    }
-
-    .nav-links {
-        top: 135px;
-        right: 12px;
-        width: 165px;
+        font-size: 27px;
     }
 
     .hero {
-        padding: 35px 17px 30px;
+        padding: 35px 15px 40px;
     }
 
     .hero h1 {
-        font-size: 31px;
+        font-size: 27px;
     }
 
     .hero h2 {
-        font-size: 37px;
+        font-size: 34px;
     }
 
     .hero p {
-        font-size: 14px;
-        line-height: 1.7;
+        font-size: 13px;
     }
 
     .welcome {
-        padding: 45px 17px;
+        padding: 45px 15px;
     }
 
     .welcome h2 {
-        font-size: 26px;
+        font-size: 25px;
     }
 
     .welcome h3 {
@@ -1269,14 +908,12 @@ footer p {
     }
 
     .welcome-text {
-        font-size: 13.5px;
+        font-size: 13px;
     }
 
-    .products,
-    .features,
-    .reviews {
-        padding-left: 17px;
-        padding-right: 17px;
+    .products > h2,
+    .features > h2,
+    .reviews > h2 {
+        font-size: 24px;
     }
-
 }
