@@ -396,49 +396,68 @@ header {
    FEATURES
    ========================================================= */
 
+/* =========================
+   MOBILE FEATURES
+   ========================= */
+
 .features {
-    padding: 80px 7%;
+    padding: 40px 15px;
     text-align: center;
     background: #fffaf3;
 }
 
 .features > h2 {
     font-family: 'Cinzel', serif;
-    font-size: 38px;
-    margin-bottom: 45px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #4c2d20;
 }
 
 .feature-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 }
 
 .feature-box {
-    padding: 30px 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(60, 35, 20, 0.07);
+    width: 220px;
+    max-width: 220px;
+
+    margin: 0 auto;
+
+    padding: 16px 12px;
+
+    text-align: center;
+
+    background: #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(60, 35, 20, 0.07);
 }
 
 .feature-box i {
+    display: block;
     color: #a36b2c;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin: 0 auto 6px;
 }
 
 .feature-box h3 {
     font-family: 'Cinzel', serif;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #4c2d20;
 }
 
 .feature-box p {
     color: #666;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
 }
-
 
 /* =========================================================
    REVIEWS
@@ -1059,7 +1078,7 @@ footer p {
     }
 
     .feature-box {
-        width: 100%;
+        width: 80%;
 
         padding: 20px 14px;
 
