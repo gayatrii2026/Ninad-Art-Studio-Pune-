@@ -135,3 +135,7 @@ images.forEach(function(image){
 ===========================================*/
 
 console.log("Welcome to Ninad Art Studio");
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}

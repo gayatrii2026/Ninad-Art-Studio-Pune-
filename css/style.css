@@ -663,3 +663,59 @@ footer p{
     transform:translateY(0);
 
 }
+/* =========================================
+   MOBILE NAVIGATION
+   ========================================= */
+
+/* Hamburger hidden on desktop */
+.menu-toggle {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE ONLY
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 32px;
+        cursor: pointer;
+        color: #6b3e26;
+        padding: 8px 15px;
+    }
+
+    /* Hide navigation links initially */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    /* Show menu when opened */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        display: block;
+        padding: 8px;
+    }
+}
