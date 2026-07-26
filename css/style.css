@@ -365,18 +365,18 @@ header {
     color: #4c2d20;
 }
 
-.divider {
-    width: 70px;
-    height: 2px;
-    background: #b47a35;
-    margin: 18px auto;
-}
 
 .welcome h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    color: #996329;
-    margin-bottom: 25px;
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    color: #b47a35;
+
+    line-height: 1;
+
+    margin-bottom: 12px;
 }
 
 .welcome-text {
@@ -975,24 +975,24 @@ footer p {
     }
 
     .welcome h2 {
-        font-size: 20px;
+        font-size: 30px;
 
         line-height: 1.2;
     }
 
-    .divider {
-        width: 42px;
-        height: 2px;
-
-        margin: 10px auto;
-    }
+    
 
     .welcome h3 {
-        font-size: 15px;
+       font-family: 'Great Vibes', cursive;
 
-        line-height: 1.25;
+    font-size: 25px;
+    font-weight: 400;
 
-        margin-bottom: 13px;
+    color: #b47a35;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
     }
 
     .welcome-text {
