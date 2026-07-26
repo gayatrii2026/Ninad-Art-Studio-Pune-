@@ -308,10 +308,10 @@ header {
    ========================= */
 
 .hero-image {
-    width: 145px;
-    max-width: 145px;
+    width: 300px;
+    max-width: 200px;
 
-    height: 210px;
+    height: 350px;
 
     margin: 0 auto;
 
@@ -326,9 +326,9 @@ header {
 }
 
 .hero-image img {
-    width: 145px;
+    width: 300px;
 
-    height: 210px;
+    height: 350px;
 
     object-fit: cover;
 
@@ -997,36 +997,24 @@ footer p {
        BELOW TEXT + BUTTONS
        ========================= */
 
-    .hero-image {
-        width: 145px;
-        max-width: 145px;
+    /* =========================
+   LARGER GANPATI HERO IMAGE
+   ========================= */
 
-        height: 210px;
+.hero-image {
+    width: 170px;
+    height: 240px;
+    margin: 0 auto;
+}
 
-        margin: 0 auto;
-
-        padding: 0;
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-        overflow: hidden;
-    }
-
-    .hero-image img {
-        width: 145px;
-        height: 210px;
-
-        object-fit: cover;
-        object-position: center;
-
-        border-radius: 12px;
-
-        display: block;
-    }
-
+.hero-image img {
+    width: 170px;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    display: block;
+}
 }
 
 
