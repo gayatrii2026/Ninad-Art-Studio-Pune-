@@ -822,9 +822,9 @@ footer p {
 
     .hero-image {
         width: 150px;
-        max-width: 150px;
+        max-width: 200px;
 
-        height: 250px;
+        height: 400px;
 
         margin-left:-20px;
 
@@ -895,7 +895,7 @@ footer p {
 
         margin: auto;
 
-        font-size: 8px;
+        font-size: 11px;
 
         line-height: 1.65;
     }
@@ -907,7 +907,7 @@ footer p {
        ===================================================== */
 
     .welcome-boxes {
-        width: 80%;
+        width: 100%;
 
         margin-top: 25px;
 
@@ -921,30 +921,30 @@ footer p {
     }
 
     .box {
-        width: 80%;
-        max-width: 200px;
+        width: 100%;
+        max-width: 250px;
 
-        min-height: 90px;
+        min-height: 105px;
 
-        padding: 12px 10px;
+        padding: 15px 12px;
 
         border-radius: 10px;
     }
 
     .box i {
-        font-size: 15px;
+        font-size: 20px;
 
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     .box h4 {
-        font-size: 16px;
+        font-size: 19px;
 
         line-height: 1.2;
     }
 
     .box span {
-        font-size: 8px;
+        font-size: 10px;
     }
 
 
