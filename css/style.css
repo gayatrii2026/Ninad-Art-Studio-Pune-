@@ -824,197 +824,178 @@ footer p {
        TEXT LEFT + GANPATI RIGHT
        ===================================================== */
 
-    @media (max-width: 600px) {
+    /* =========================================
+   MOBILE HERO
+   ========================================= */
 
-    /* =========================
-       HERO - MOBILE VERTICAL
-       ========================= */
+.hero {
+    width: 100%;
+    min-height: auto;
 
-    .hero {
-        width: 100%;
-        min-height: auto;
-        height: auto;
+    padding: 28px 15px 30px;
 
-        padding: 25px 14px 30px;
+    display: flex;
+    flex-direction: column;
 
-        display: flex;
-        flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-        align-items: center;
-        justify-content: flex-start;
+    gap: 0;
 
-        text-align: center;
+    background: #fff8ef;
+    overflow: hidden;
+}
 
-        background: #fff8ef;
 
-        overflow: hidden;
-    }
+/* =========================================
+   HERO TEXT
+   ========================================= */
 
+.hero-text {
+    width: 100%;
+    max-width: 350px;
 
-    /* =========================
-       HERO TEXT
-       ========================= */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .hero-text {
-        width: 100%;
-        max-width: 350px;
-        min-width: 0;
+.hero-top {
+    font-size: 9px;
+    letter-spacing: 2.5px;
 
-        margin: 0;
+    margin-bottom: 8px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    color: #a36b2c;
+}
 
+.hero h1 {
+    font-size: 24px;
+    line-height: 1.15;
 
-    /* WELCOME TO */
+    margin-bottom: 8px;
 
-    .hero-top {
-        display: block;
+    color: #4c2d20;
+}
 
-        font-family: 'Cinzel', serif;
+.hero h2 {
+    font-size: 27px;
+    line-height: 1;
 
-        font-size: 9px;
-        letter-spacing: 2.5px;
+    margin-bottom: 12px;
 
-        color: #a36b2c;
+    color: #b47a35;
+}
 
-        margin-bottom: 8px;
-    }
+.hero-text > p {
+    width: 100%;
+    max-width: 300px;
 
+    font-size: 11px;
+    line-height: 1.55;
 
-    /* HANDCRAFTED GANPATI IDOLS */
+    margin-bottom: 15px;
 
-    .hero h1 {
-        font-family: 'Cinzel', serif;
+    color: #555;
+}
 
-        font-size: 23px;
-        line-height: 1.15;
-        font-weight: 600;
 
-        color: #4c2d20;
+/* =========================================
+   MOBILE BUTTONS - HORIZONTAL
+   ========================================= */
 
-        margin-bottom: 7px;
-    }
+.hero-buttons {
+    width: 100%;
 
+    display: flex;
+    flex-direction: row;
 
-    /* MADE WITH DEVOTION */
+    justify-content: center;
+    align-items: center;
 
-    .hero h2 {
-        font-family: 'Great Vibes', cursive;
+    gap: 8px;
 
-        font-size: 27px;
-        line-height: 1;
-        font-weight: 400;
+    margin-bottom: 18px;
+}
 
-        color: #b47a35;
+.btn,
+.btn-outline {
+    width: 105px;
+    min-width: 105px;
 
-        margin-bottom: 12px;
-    }
+    height: 29px;
+    min-height: 29px;
 
+    padding: 4px 6px;
 
-    /* PARAGRAPH */
+    border-radius: 5px;
 
-    .hero-text > p {
-        width: 100%;
-        max-width: 290px;
+    font-size: 9px;
+    font-weight: 500;
 
-        font-size: 11px;
-        line-height: 1.55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        color: #4b4b4b;
+    line-height: 1;
+}
 
-        margin-bottom: 14px;
-    }
 
+/* Filled button */
 
-    /* =========================
-       BUTTONS - HORIZONTAL
-       ========================= */
+.btn {
+    color: #ffffff;
 
-    .hero-buttons {
-        width: 100%;
+    background: #996329;
 
-        display: flex;
-        flex-direction: row;
+    border: 1px solid #996329;
+}
 
-        justify-content: center;
-        align-items: center;
 
-        gap: 7px;
+/* Outline button */
 
-        margin-bottom: 20px;
-    }
+.btn-outline {
+    color: #996329;
 
-    .btn,
-    .btn-outline {
-        width: 100px;
-        min-width: 100px;
+    background: #fffaf3;
 
-        height: 28px;
-        min-height: 28px;
+    border: 1px solid #996329;
+}
 
-        padding: 4px 5px;
 
-        border-radius: 5px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-size: 8px;
-        font-weight: 500;
-
-        line-height: 1;
-    }
-
-
-    /* FILLED BUTTON */
-
-    .btn {
-        color: #ffffff;
-
-        background: #996329;
-
-        border: 1px solid #996329;
-    }
-
-
-    /* OUTLINE BUTTON */
-
-    .btn-outline {
-        color: #996329;
-
-        background: #fffaf3;
-
-        border: 1px solid #996329;
-    }
-
-
-    /* =========================
-       GANPATI IMAGE
-       BELOW TEXT + BUTTONS
-       ========================= */
-
-    /* =========================
-   LARGER GANPATI HERO IMAGE
-   ========================= */
+/* =========================================
+   GANPATI IMAGE - BELOW TEXT & BUTTONS
+   ========================================= */
 
 .hero-image {
-    width: 170px;
-    height: 240px;
+    width: 145px;
+    max-width: 145px;
+
+    height: 210px;
+
     margin: 0 auto;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
 
 .hero-image img {
-    width: 170px;
-    height: 240px;
+    width: 145px;
+    height: 210px;
+
     object-fit: cover;
+
     object-position: center;
-    border-radius: 14px;
+
+    border-radius: 12px;
+
     display: block;
-}
 }
 
 
