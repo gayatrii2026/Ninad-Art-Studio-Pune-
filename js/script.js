@@ -139,7 +139,18 @@ function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
 }
+
+
+
+
 function toggleMenu() {
     const nav = document.getElementById("navLinks");
     nav.classList.toggle("active");
 }
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
